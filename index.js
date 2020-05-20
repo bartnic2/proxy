@@ -6,4 +6,4 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 app.use('/market', proxy('https://localhost:444'));
 app.use('/sso', proxy('https://localhost:443'))
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(port, () => console.log(`Example app listening at https://localhost:${port}`))
